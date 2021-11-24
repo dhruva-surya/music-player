@@ -5,9 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #progressContainer{
+            width: 100%;
+            height: 5px;
+            border: 1px solid black;
+
+        }
+        #progress{
+            width: 0%;
+            height: 5px;
+            background-color: blue;
+        }
+      
+        #canvas{
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <canvas id="canvas" width="200" height="100"  style="border:1px solid #000000"></canvas>
+    <canvas id="canvas"  height="40"  style="border:1px solid #000000"></canvas>
+    <div id="progressContainer">
+        <div id="progress"></div>
+    </div>
     <audio src="../music/Your Power Billie Eilish 320 Kbps.mp3" id="audio" onchange="track()" ></audio>
     <div><button type="mute" >mute</button><button type="play" onclick="playPause()" id="playAndPause">&#9658</button></div>
     
