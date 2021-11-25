@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: rgb(18, 18, 41);
+        }
+
         #progressContainer{
             width: 100%;
             height: 5px;
-            border: 1px solid black;
-
+   
+        }
+        .mainDiv{
+            width: 80%;
+            margin: 80px auto;
         }
         #progress{
             width: 0%;
@@ -20,16 +27,93 @@
       
         #canvas{
             width: 100%;
+            background-color: #ffff;
+            border-radius: 5px;
+           
+          
         }
+
+       #playAndPause{
+           color:#0288D1;
+           padding: 2%;
+           font-size: 30px;
+           width: 20%;
+           
+           border-radius: 10px;
+           border-color:#0288D1 ;
+       }
+       #mute{
+        color:#0288D1;
+        width: 20%;
+           padding: 1%;
+           font-size: 20px;
+         
+           border-radius: 10px;
+           border-color:#0288D1 ;
+       }
+       .bottom{
+           margin-top: -6px;
+           width: 100%;
+           background-color: rgb(185, 183, 183);
+           height: 100px;
+           border-radius: 5px;
+       }
+
+        .intro{
+       
+           
+            position:absolute;
+            top: 20px;
+            left:5%;
+            padding: 0.5%;
+            background-color: greenyellow;
+            color: #ffff;
+            border-radius: 2px;
+        }
+        .oneSix{
+       
+           
+       position:absolute;
+       top: 22px;
+       left:15%;
+       padding: 0.5%;
+       background-color:#0288D1 ;
+       color: #ffff;
+       border-radius: 2px;
+   }
+   .buttonDiv{
+     width: 20%;
+     margin-left: 42%;
+     padding: 2%;
+
+   }
+   
+   .RapBuild{
+       
+           
+       position:absolute;
+       top: 22px;
+       left:15%;
+       padding: 0.5%;
+       background-color:#0288D1 ;
+       color: #ffff;
+       border-radius: 2px;
+   }
+
+
     </style>
 </head>
 <body>
-    <canvas id="canvas"  height="40"  style="border:1px solid #000000"></canvas>
-    <div id="progressContainer">
-        <div id="progress"></div>
-    </div>
+    <div class="mainDiv">
+    <canvas id="canvas"  height="70" style="border:1px solid #000000"></canvas>
+    <div class="intro">Introduction</div>
+    <div class="oneSix">One_Six</div>
+    <div class="RapBuild">Rapid Building Energy</div>
     <audio src="../music/Your Power Billie Eilish 320 Kbps.mp3" id="audio" onchange="track()" ></audio>
-    <div><button type="mute" >mute</button><button type="play" onclick="playPause()" id="playAndPause">&#9658</button></div>
+    <div class="bottom">
+    <div class="buttonDiv"><button type="mute" id="mute">&#128264</button><button type="play" onclick="playPause()" id="playAndPause">&#9658</button><button type="play" onclick="playPause()" id="mute">&#x25BA&#x25BA</button></div>
+ </div>
+</div>
     
 </body>
 <script src="./main.js"></script>
