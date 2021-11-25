@@ -16,25 +16,46 @@ let yarr=[];
 
 //  twoD.fillStyle="red"
 //  twoD.fillRect(0,14,1,17);
-//  twoD.fillStyle="black";
+ twoD.fillStyle="black";
+
 
 
  for(let i=2;i<=298;i=i+2){
      let h=Math.floor(Math.random() * 20)+5;
     let y= Math.floor(Math.random() * 6)+8;
   
-    twoD.fillRect(i,y,1,h)
+  
   harr.push(h);
   yarr.push(y);
      
  }
 
- 
+ function dis(x){
+     let j=0;
+     twoD.fillStyle="black";
+  for(let i=2;i<=298;i=i+2){
+     if(i==x){ 
+   twoD.fillStyle="red"
+     }
+     twoD.fillRect(i,yarr[j],1,harr[j])
+    j++
+  }
 
-// function displ(arr){
-// for(let i=0;i<arr.length;i++){
-//     arr[i]
-// }
+
+ }
+
+
+ dis()
+
+// function dis1(i){
+  
+ 
+//   for(let k=0;k<arr.length;k++){
+//       arr[k]
+//   }
+//   console.log(arr)
+
+
 // }
 
 
@@ -61,33 +82,34 @@ function playPause(){
 
 audio.addEventListener("timeupdate",updateProgress);
 let i=0;
-let j=0;
-let prev=0;
+let j=1;
+
 
 
 
 
 function updateProgress(e){
 
-    
+   
 
         const {duration,currentTime}=e.srcElement;
         var progressPer=(currentTime/duration)*100;
         let x=Math.floor(progressPer*2.98);
       
-     //  progress.style.width=`${progressPer}%`
-       twoD.fillStyle="red" 
-       if(x%2==0){ 
-         if(x!=prev)  {
-     twoD.fillRect(x,yarr[j],1,harr[j]);
-     j++;
-     prev=x
-         }
-       }
-    
-         console.log(x,j)
-
+     // progress.style.width=`${progressPer}%`
+    //    twoD.fillStyle="red" 
+    //    if(x%2==0){ 
+    //      if(x!=prev)  {
+    //  twoD.fillRect(x,yarr[j],1,harr[j]);
+    //  j++;
+    //  prev=x
+    //      }
+    //    }
  
+    twoD.clearRect(0, 0, canvas.width, canvas.height);
+      
+    dis(x);
+   
 
 
 
