@@ -34,7 +34,7 @@ twoD.fillStyle="greenyellow"
 twoD.fillRect(21,7,1,21);
 twoD.beginPath();
 twoD.fillStyle = "greenyellow";
-twoD.arc(21.5, 30, 2, 0, 2 * Math.PI);
+twoD.arc(21.5, 30, 1.5, 0, 2 * Math.PI);
 twoD.strokeStyle = "greenyellow";
 twoD.fill();
 twoD.stroke();
@@ -44,7 +44,7 @@ twoD.fillStyle="#0288D1"
 twoD.fillRect(49,7,1,21);
 twoD.beginPath();
 twoD.fillStyle = "g#0288D1";
-twoD.arc(49.5, 30, 2, 0, 2 * Math.PI);
+twoD.arc(49.5, 30, 1.5, 0, 2 * Math.PI);
 twoD.strokeStyle = "#0288D1";
 twoD.fill();
 twoD.stroke();
@@ -54,7 +54,7 @@ twoD.fillStyle="#0288D1"
 twoD.fillRect(248,6,1,22);
 twoD.beginPath();
 twoD.fillStyle = "#0288D1";
-twoD.arc(248.5, 30, 2, 0, 2 * Math.PI);
+twoD.arc(248.5, 30, 1.5, 0, 2 * Math.PI);
 twoD.strokeStyle = "#0288D1";
 twoD.fill();
 twoD.stroke();
@@ -63,7 +63,7 @@ twoD.fillStyle="#33691E"
 twoD.fillRect(275,5.8,1,22);
 twoD.beginPath();
 twoD.fillStyle = "#33691E";
-twoD.arc(275.5, 30, 2, 0, 2 * Math.PI);
+twoD.arc(275.5, 30, 1.5, 0, 2 * Math.PI);
 twoD.strokeStyle = "#33691E";
 twoD.fill();
 twoD.stroke();
@@ -72,7 +72,7 @@ twoD.fillStyle="#283593"
 twoD.fillRect(290,8,1,20);
 twoD.beginPath();
 twoD.fillStyle = "#283593";
-twoD.arc(290.5, 30, 2, 0, 2 * Math.PI);
+twoD.arc(290.5, 30, 1.5, 0, 2 * Math.PI);
 twoD.strokeStyle = "#283593";
 twoD.fill();
 twoD.stroke();
@@ -81,7 +81,7 @@ twoD.fillStyle="#4A148C"
 twoD.fillRect(267,16,1,14);
 twoD.beginPath();
 twoD.fillStyle = "#4A148C";
-twoD.arc(267.5, 30, 2, 0, 2 * Math.PI);
+twoD.arc(267.5, 30, 1.5, 0, 2 * Math.PI);
 twoD.strokeStyle = "#4A148C";
 twoD.fill();
 twoD.stroke();
